@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive; */
+/* font-family: 'Lexend Deca', sans-serif; */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+@media only screen and (max-width: 840px){
+    body{
+        padding: 2rem 0;
+    }
+}
+.cards{
+    display: flex;
+    max-width: 720px;
+}
+@media only screen and (max-width: 840px){
+    .cards{
+        flex-direction: column;
+        max-width: 300px;
+    }
+}
+.icons{
+    width: 25%;
+    padding-bottom: 15px;
+}
+.headings{
+    padding-bottom: 15px;
+    color: hsl(0, 0%, 95%);
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+}
+.card_note{
+    padding-bottom: 60px;
+}
+@media only screen and (max-width: 840px){
+    .card_note{
+        padding-bottom: 20px;
+    }
+}
+.card_1{
+    flex: 1;
+    border-radius: 5px 0 0  5px;
+    padding: 38px;
+    background-color: hsl(31, 77%, 52%);
+
+}
+@media only screen and (max-width: 840px){
+    .card_1{
+        border-radius: 5px 5px 0 0;
+    }
+}
+.card_2{
+    flex: 1;
+    padding: 38px;
+    background-color: hsl(184, 100%, 22%);
+}
+.card_3{
+    flex: 1;
+    border-radius: 0 5px 5px 0;
+    padding: 38px;
+    background-color: hsl(179, 100%, 13%);
+}
+@media only screen and (max-width: 840px){
+    .card_3{
+        border-radius: 0 0 5px 5px;
+    }
+}
+.btn{
+    background-color: hsl(0, 0%, 95%);
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 2px solid hsl(0, 0%, 95%);
+    font-size: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.btn:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+.btn_1{
+    color: hsl(31, 77%, 52%);
+}
+.btn_2{
+    color: hsl(184, 100%, 22%);
+}
+.btn_3{
+    color: hsl(179, 100%, 13%);
+}
